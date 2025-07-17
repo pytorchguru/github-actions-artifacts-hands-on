@@ -25,8 +25,8 @@ jobs:
     - name: Download the text file from previous job 
       uses: actions/download-artifact@v4 
       with: 
-        name: artifact-path
+        name: hello-artifact
         path: ./artifacts 
-    - name: Display contents of the hello.txt 
+    - name: Display content of the text file 
       run: cat ./artifacts/hello.txt 
     
